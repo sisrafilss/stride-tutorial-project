@@ -27,7 +27,7 @@ const EditProduct = () => {
 
     const data = { title, brand, price, description, image_url };
 
-    await fetch(`http://localhost:5000/shoes/${product._id}`, {
+    await fetch(`https://stride-tutorial-project-server.vercel.app/shoes/${product._id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

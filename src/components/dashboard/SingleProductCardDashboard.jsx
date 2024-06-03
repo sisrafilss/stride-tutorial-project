@@ -7,7 +7,7 @@ const SingleProductCardDashboard = ({ product, onDelete }) => {
   const token = localStorage.getItem("token");
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/shoes/${_id}`, {
+    await fetch(`https://stride-tutorial-project-server.vercel.app/shoes/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

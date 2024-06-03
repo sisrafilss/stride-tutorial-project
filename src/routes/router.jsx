@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
         path: "/products/:id",
         element: <ProductDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/shoes/${params.id}`),
+          fetch(`https://stride-tutorial-project-server.vercel.app/shoes/${params.id}`),
       },
       {
         path: "/about",
@@ -65,7 +65,7 @@ export const router = createBrowserRouter([
             <EditProfile />
           </PrivateRoute>
         ),
-        loader: ({params}) => fetch(`http://localhost:5000/user/get/${params.id}`)
+        loader: ({params}) => fetch(`https://stride-tutorial-project-server.vercel.app/user/get/${params.id}`)
       },
       {
         path: "all-products",
@@ -91,7 +91,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/shoes/${params.id}`),
+          fetch(`https://stride-tutorial-project-server.vercel.app/shoes/${params.id}`),
       },
     ],
   },

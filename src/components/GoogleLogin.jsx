@@ -12,7 +12,7 @@ const GoogleLogin = () => {
           name: data?.user?.displayName,
         };
 
-        fetch("http://localhost:5000/user", {
+        fetch("https://stride-tutorial-project-server.vercel.app/user", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
